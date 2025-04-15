@@ -1,11 +1,12 @@
+@use 'config/variables' as variable
+
 .intro
-  padding: 10rem 0 3rem
-  @media ( $screen-lg )
-    padding: 10rem 0 5rem 0
-  &__title
-    margin-bottom: 4rem
-    text-align: center
-  &__buttons
-    margin-bottom: 4rem
-    @media ( $screen-md )
-      margin-bottom: 8rem
+  padding: 4.3rem 0 7.2rem 0
+  @media screen and ( variable.$screen-sm )
+    padding: 8.5rem 0 12.7rem 0
+  &__features
+    margin-top: 3.8rem
+    gap: 3.2rem
+    @media screen and ( variable.$screen-sm )
+      margin-top: 8rem
+      gap: 2.4rem

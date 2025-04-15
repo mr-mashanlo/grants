@@ -1,6 +1,9 @@
-import { initSwipers, setCategorySliderButtonWidths } from './swiper.js';
-import { initAccordions } from './accordion.js';
+import { initSwipers } from './swipers';
+import { initAccordions } from './accordions';
+import { initHamburger } from './hamburger';
+import { setSwiperWidth } from './set-swiper-width';
 
 initSwipers();
-setCategorySliderButtonWidths();
 initAccordions();
+initHamburger();
+setSwiperWidth();

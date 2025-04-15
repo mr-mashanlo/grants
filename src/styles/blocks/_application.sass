@@ -1,0 +1,21 @@
+@use 'config/variables' as variable
+
+.application
+  &__grid .grid__item
+    &:nth-of-type(1) .application__card
+      transform: rotate(-1deg)
+      @media screen and ( variable.$screen-sm )
+        transform: translateY(-1.5rem) rotate(-1deg)
+    &:nth-of-type(2) .application__card
+      transform: rotate(3deg)
+      @media screen and ( variable.$screen-sm )
+        transform: translateY(1.4rem) translateX(1.7rem) rotate(3deg)
+    &:nth-of-type(3) .application__card
+      transform: rotate(-2deg)
+      @media screen and ( variable.$screen-sm )
+        transform: translateY(-0.7rem) translateX(3.4rem) rotate(-2deg)
+  &__card
+    min-height: 32rem
+    @media screen and ( variable.$screen-sm )
+      min-height: 48rem
+

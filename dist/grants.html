@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
-  <title>Funded Page</title>
-  <meta name="title" content="Funded Page">
+  <title>Home Page</title>
+  <meta name="title" content="Home Page">
   <meta name="description" content="">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Funded Page">
+  <meta property="og:title" content="Home Page">
   <meta property="og:description" content="">
   <meta property="og:image" content="images/favicon.svg">
 
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Funded Page">
+  <meta property="twitter:title" content="Home Page">
   <meta property="twitter:description" content="">
   <meta property="twitter:image" content="images/favicon.svg">
 
@@ -40,216 +40,302 @@
 </head>
 
 <body>
+  <div class="page">
 
-<div class="page page--overflow" id="page">
-
-  <header class="header" id="header">
-  <div class="container">
-    <div class="header__inner">
-      <a href="" class="logo">
-        <img src="images/dev/logo-1.svg" alt="" class="logo__img">
+    <header id="header" class="header">
+  <div class="container container--wide">
+    <div class="header__navigation">
+      <a href="index.html" class="header__brand">
+        <img src="images/logo-general.svg" alt="" class="logo logo--general">
       </a>
-      <ul class="menu menu--desktop">
-        <li class="menu__item"><a href="" class="menu__link">About</a></li>
-        <li class="menu__item"><a href="" class="menu__link">FAQ</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Brand assets</a></li>
-        <li class="menu__item"><a href="" class="menu__link">dYdX Foundation</a></li>
-        <li class="menu__item"><a href="" class="menu__link">dYdX trading</a></li>
-      </ul>
+      <div class="header__slider">
+        <ul class="header__menu menu menu--cols menu--sm-rows font-monospace">
+          <li class="menu__item">
+            <a href="discover.html" class="menu__link text-gray">Discover initiatives</a>
+          </li>
+          <li class="menu__item">
+            <a href="grants.html" class="menu__link text-gray">Funded grants</a>
+          </li>
+          <li class="menu__item">
+            <a href="program.html" class="menu__link text-gray">Program expenses</a>
+          </li>
+          <li class="menu__item">
+            <a href="blog.html" class="menu__link text-gray">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a href="faq.html" class="menu__link text-gray">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <a href="" class="header__button button button--accent">Apply <span class="hidden sm-inline">for grant</span></a>
+      <button class="header__hamburger hamburger-button">
+        <div class="hamburger hamburger--chop">
+          <div class="inner">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </button>
     </div>
   </div>
 </header>
 
-  <section class="intro" id="intro">
-    <div class="container container--small">
-      <div class="hero hero--centered">
-        <h2 class="title title--h2">Funded grants</h2>
-      </div>
-    </div>
-  </section>
-
-  <section class="project section" id="project">
-    <div class="container">
-      <div class="category-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="button">All</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Technical / Tool Development</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Governance</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Growth / Marketing</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Analytics</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Second Party Provider</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Third Party Provider</a>
+    <section id="grants" class="section grants">
+      <div class="container">
+        <div class="snippet snippet--tx-center">
+          <h2 class="title title--h2">Funded grants</h2>
+          <div class="snippet__actions">
+            <div class="toggle-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="" class="button button--dark">All</a></div>
+                <div class="swiper-slide"><a href="" class="button">Technical / Tool Development</a></div>
+                <div class="swiper-slide"><a href="" class="button">Governance</a></div>
+                <div class="swiper-slide"><a href="" class="button">Growth / Marketing</a></div>
+                <div class="swiper-slide"><a href="" class="button">Analytics</a></div>
+                <div class="swiper-slide"><a href="" class="button">Third Party Provider</a></div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="section__content">
+          <ul class="grid grid--sm-three">
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Hedgie banner</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Hedgie educational content</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Hedgie educational content</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Japanese content website</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">DGP referral program</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">ETHGlobal event sponsorship</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Rust SDK</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Hack for Inclusion Sponsorship</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--large">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="snippet__title font-monospace text-gray">Category</p>
+                    <p class="snippet__heading title title--h4">Gitcoin Grants Round 13 sponsorship</p>
+                    <p class="snippet__heading font-monospace text-gray">Funding amount: $5,000 - $6,000</p>
+                    <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <div class="user-stack">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                      <img src="images/user.svg" alt="" class="user-stack__icon">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="grid grid--three">
-        <li class="grid__item">
-          <div class="card">
-            <div class="card__content">
-              <p class="card__category">Crowdfund</p>
-              <p class="title title--h4 card__title">Funding rates page</p>
-              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
-              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-            </div>
-            <div class="card__footer">
-              <div class="users">
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <div class="card__content">
-              <p class="card__category">Edition</p>
-              <p class="title title--h4 card__title">Tradingview integration</p>
-              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
-              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-            </div>
-            <div class="card__footer">
-              <div class="users">
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <div class="card__content">
-              <p class="card__category">Entry</p>
-              <p class="title title--h4 card__title">Rewards optimization research and paper</p>
-              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
-              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-            </div>
-            <div class="card__footer">
-              <div class="users">
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <div class="card__content">
-              <p class="card__category">Crowdfund</p>
-              <p class="title title--h4 card__title">DAO Organizational Structure Research</p>
-              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
-              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-            </div>
-            <div class="card__footer">
-              <div class="users">
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <div class="card__content">
-              <p class="card__category">Crowdfund</p>
-              <p class="title title--h4 card__title">Funding rates page</p>
-              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
-              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-            </div>
-            <div class="card__footer">
-              <div class="users">
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <div class="card__content">
-              <p class="card__category">Edition</p>
-              <p class="title title--h4 card__title">Tradingview integration</p>
-              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
-              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-            </div>
-            <div class="card__footer">
-              <div class="users">
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-                <a href="" class="user">
-                  <img src="images/dev/user.svg" alt="" class="user__img">
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+    </section>
 
-  <section class=" section" id="">
-    <div class="container">
-      <div class="banner">
-        <p class="banner__text">Have a project in mind?</p>
-        <h2 class="title title--h3 banner__title">Let’s create something awesome.</h2>
-        <a href="" class="button button--white">Apply for grant</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer section" id="footer">
+    <section class="section">
   <div class="container">
-    <ul class="menu">
-      <li class="menu__item"><a href="" class="menu__link">About</a></li>
-      <li class="menu__item"><a href="" class="menu__link">FAQ</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Brand assets</a></li>
-      <li class="menu__item"><a href="" class="menu__link">dYdX Foundation</a></li>
-      <li class="menu__item"><a href="" class="menu__link">dYdX trading</a></li>
-      <ul class="menu social menu__social">
+    <div class="banner">
+      <div class="snippet snippet--tx-center">
+        <p class="subtitle subtitle--md">Have a project in mind?</p>
+        <h2 class="snippet__heading title title--h3">Let’s create something awesome.</h2>
+        <div class="snippet__actions">
+          <a href="" class="button button--white button--with-icon">
+            <span>Apply for grant</span>
+            <img src="images/icons/arrow-right-accent.svg" alt="" class="button__icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer id="footer" class="section footer">
+  <div class="container">
+    <div class="footer__navigation">
+      <img src="images/logo-small.svg" alt="" class="logo logo--small">
+      <ul class="menu menu--cols menu--sm-rows font-monospace">
         <li class="menu__item">
-          <a href="" class="menu__link"><img src="images/dev/Twitter.svg" alt="" class="menu__icon"></a>
+          <a href="" class="menu__link text-gray">About</a>
         </li>
-        <li class="menu__item"><a href="" class="menu__link"><img src="images/dev/Discord.svg" alt="" class="menu__icon"></a></li>
+        <li class="menu__item">
+          <a href="" class="menu__link text-gray">FAQ</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link text-gray">Brand assets</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link text-gray">dYdX Foundation</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link text-gray">dYdX trading</a>
+        </li>
       </ul>
-    </ul>
+      <ul class="footer__social menu">
+        <li class="menu__item">
+          <a href="" class="menu__link"><img src="images/icons/twitter.svg" alt="" class="menu__icon"></a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link"><img src="images/icons/discord.svg" alt="" class="menu__icon"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
 
-</div>
-
+  </div>
 </body>
 
 </html>

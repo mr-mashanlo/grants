@@ -1,12 +1,9 @@
-@use 'sass:map'
+@use 'config/reset'
+@use 'config/fonts'
+@use 'config/hamburger'
 
-@import 'config/variables'
-@import 'config/mixins'
-@import 'config/reset'
-@import 'config/fonts'
+@use '../../node_modules/swiper/swiper-bundle.min.css'
+@use '../../node_modules/accordion/src/accordion.css'
 
-@import 'node_modules/swiper/swiper'
-@import 'node_modules/accordion/src/accordion'
-
-@import 'ui/**/*'
-@import 'blocks/**/*'
+@use 'global'
+@use 'blocks'

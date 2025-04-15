@@ -1,42 +1,38 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-
-  <title>@@title</title>
-  <meta name="title" content="@@title">
-  <meta name="description" content="@@description">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="@@title">
-  <meta property="og:description" content="@@description">
-  <meta property="og:image" content="images/favicon.svg">
-
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="@@title">
-  <meta property="twitter:description" content="@@description">
-  <meta property="twitter:image" content="images/favicon.svg">
-
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.svg">
-  <link rel="icon" sizes="192x192" href="images/favicon.svg">
-  <link rel="icon" sizes="32x32" href="images/favicon.svg">
-  <link rel="icon" sizes="96x96" href="images/favicon.svg">
-  <link rel="icon" sizes="16x16" href="images/favicon.svg">
-
-  <link rel="stylesheet" href="styles/main.min.css">
-  <script src="scripts/main.min.js" defer></script>
-</head>
-
-<body>
+<header id="header" class="header">
+  <div class="container container--wide">
+    <div class="header__navigation">
+      <a href="index.html" class="header__brand">
+        <img src="images/logo-general.svg" alt="" class="logo logo--general">
+      </a>
+      <div class="header__slider">
+        <ul class="header__menu menu menu--cols menu--sm-rows font-monospace">
+          <li class="menu__item">
+            <a href="discover.html" class="menu__link text-gray">Discover initiatives</a>
+          </li>
+          <li class="menu__item">
+            <a href="grants.html" class="menu__link text-gray">Funded grants</a>
+          </li>
+          <li class="menu__item">
+            <a href="program.html" class="menu__link text-gray">Program expenses</a>
+          </li>
+          <li class="menu__item">
+            <a href="blog.html" class="menu__link text-gray">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a href="faq.html" class="menu__link text-gray">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <a href="" class="header__button button button--accent">Apply <span class="hidden sm-inline">for grant</span></a>
+      <button class="header__hamburger hamburger-button">
+        <div class="hamburger hamburger--chop">
+          <div class="inner">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,93 +1,136 @@
-@@include('./parts/header.html', { 'title': 'Blog Page', 'description': '' })
+<!DOCTYPE html>
+<html lang="ru">
 
-<div class="page page--overflow" id="page">
+@@include('./parts/head.html', { 'title': 'Home Page', 'description': '' })
 
-  @@include('./parts/header-menu.html')
+<body>
+  <div class="page">
 
-  <section class="intro" id="intro">
-    <div class="container container--small">
-      <div class="hero hero--centered">
-        <h2 class="title title--h2">Blog</h2>
-      </div>
-    </div>
-  </section>
+    @@include('./parts/header.html')
 
-  <section class="news section" id="news">
-    <div class="container container--small">
-      <div class="category-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="button">Latest</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Funding round</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">Spotlight</a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="button button--transparent">News & updates</a>
+    <section id="blog" class="section blog">
+      <div class="container container--small">
+        <div class="snippet snippet--tx-center">
+          <h2 class="title title--h2">Blog</h2>
+          <div class="snippet__actions">
+            <div class="toggle-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="" class="button button--dark">Latest</a></div>
+                <div class="swiper-slide"><a href="" class="button">Funding round</a></div>
+                <div class="swiper-slide"><a href="" class="button">Spotlight</a></div>
+                <div class="swiper-slide"><a href="" class="button">News & updates</a></div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="section__content">
+          <ul class="grid grid--sm-two">
+            <li class="grid__item">
+              <article class="card card--medium">
+                <img src="images/news.webp" alt="" class="card__image">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="font-monospace text-gray">Funding round</p>
+                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <p class="font-monospace text-gray">January 1, 2022</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--medium">
+                <img src="images/news.webp" alt="" class="card__image">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="font-monospace text-gray">Funding round</p>
+                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <p class="font-monospace text-gray">January 1, 2022</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--medium">
+                <img src="images/news.webp" alt="" class="card__image">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="font-monospace text-gray">Funding round</p>
+                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <p class="font-monospace text-gray">January 1, 2022</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--medium">
+                <img src="images/news.webp" alt="" class="card__image">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="font-monospace text-gray">Funding round</p>
+                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <p class="font-monospace text-gray">January 1, 2022</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--medium">
+                <img src="images/news.webp" alt="" class="card__image">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="font-monospace text-gray">Funding round</p>
+                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <p class="font-monospace text-gray">January 1, 2022</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid__item">
+              <article class="card card--medium">
+                <img src="images/news.webp" alt="" class="card__image">
+                <div class="card__content">
+                  <div class="snippet">
+                    <p class="font-monospace text-gray">Funding round</p>
+                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__content">
+                    <p class="font-monospace text-gray">January 1, 2022</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="grid grid--two">
-        <li class="grid__item">
-          <div class="card">
-            <img src="images/dev/card-img.webp" alt="" class="card__img">
-            <div class="card__content">
-              <p class="card__category">Funding round</p>
-              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
-            </div>
-            <div class="card__footer">
-              <p class="card__subtitle">January 1, 2022</p>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <img src="images/dev/card-img.webp" alt="" class="card__img">
-            <div class="card__content">
-              <p class="card__category">Funding round</p>
-              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
-            </div>
-            <div class="card__footer">
-              <p class="card__subtitle">January 1, 2022</p>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <img src="images/dev/card-img.webp" alt="" class="card__img">
-            <div class="card__content">
-              <p class="card__category">Funding round</p>
-              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
-            </div>
-            <div class="card__footer">
-              <p class="card__subtitle">January 1, 2022</p>
-            </div>
-          </div>
-        </li>
-        <li class="grid__item">
-          <div class="card">
-            <img src="images/dev/card-img.webp" alt="" class="card__img">
-            <div class="card__content">
-              <p class="card__category">Funding round</p>
-              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
-            </div>
-            <div class="card__footer">
-              <p class="card__subtitle">January 1, 2022</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="buttons news__footer">
-        <a href="#" class="button">Load More</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  @@include('./parts/footer-menu.html')
+    @@include('./parts/banner.html')
 
-</div>
+    @@include('./parts/footer.html')
 
-@@include('./parts/footer.html')
+  </div>
+</body>
+
+</html>

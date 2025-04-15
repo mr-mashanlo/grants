@@ -1,0 +1,356 @@
+@use 'config/variables' as variable
+
+html
+  font-size: calc(100vw / 320 * 10)
+  @media screen and ( variable.$screen-sm )
+    font-size: calc(100vw / 1440 * 10)
+
+body
+  font-family: 'CircularStd', sans-serif
+  font-size: 1.4rem
+  line-height: 1.42
+  background: variable.$dark-blue
+  color: variable.$white
+  @media screen and ( variable.$screen-sm )
+    font-size: 1.6rem
+    line-height: 1.5
+
+.page
+  background: url(../images/grid-top.webp) center top / 470% no-repeat, url(../images/grid-bottom.webp) center bottom / 470% no-repeat
+  @media screen and ( variable.$screen-sm )
+    background: url(../images/grid-top.webp) center top / 100% no-repeat, url(../images/grid-bottom.webp) center bottom / 100% no-repeat
+
+.container
+  width: 100%
+  max-width: 124.5rem
+  margin: 0 auto
+  padding: 0 2.5rem
+  @media screen and ( variable.$screen-sm )
+    padding: 0 1rem
+  &--wide
+    max-width: 138.8rem
+  &--small
+    max-width: 83rem
+
+.section
+  padding: 4.1rem 0
+  overflow: hidden
+  @media screen and ( variable.$screen-sm )
+    padding: 8.2rem 0
+  &__content
+    margin-top: 4rem
+    @media screen and ( variable.$screen-sm )
+      margin-top: 7.7rem
+
+.snippet
+  &--tx-center
+    text-align: center
+  &--wide
+    max-width: 60rem
+    margin: 0 auto
+  &--bg-image
+    position: relative
+    z-index: 2
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: -1
+      width: 92rem
+      height: 32rem
+      background: url(../images/grid-header.webp) center / 150% no-repeat
+  &__heading
+    margin-top: 0.8rem
+  &__description
+    margin-top: 1.6rem
+  &__content
+    margin-top: 2.2rem
+  &__actions
+    margin-top: 3.6rem
+
+.title
+  font-weight: 700
+  &--h1
+    font-size: 4rem
+    line-height: 1.2
+    letter-spacing: -0.09rem
+    @media screen and ( variable.$screen-sm )
+      font-size: 8rem
+      line-height: 1.1
+      letter-spacing: -.18rem
+  &--h2
+    font-size: 3.2rem
+    line-height: 1.25
+    @media screen and ( variable.$screen-sm )
+      font-size: 6rem
+      line-height: 1.2
+      letter-spacing: -.15rem
+  &--h3
+    font-size: 2.4rem
+    line-height: 1.33
+    letter-spacing: -.04rem
+    @media screen and ( variable.$screen-sm )
+      font-size: 4rem
+      line-height: 1.2
+      letter-spacing: -.08rem
+  &--h4
+    font-size: 2rem
+    line-height: 1.6
+    letter-spacing: -.04rem
+    @media screen and ( variable.$screen-sm )
+      font-size: 2.4rem
+      line-height: 1.33
+
+.subtitle
+  &--lg
+    font-size: 2rem
+    line-height: 1.6
+  &--md
+    font-size: 1.6rem
+    line-height: 1.5
+    letter-spacing: -.02rem
+    @media screen and ( variable.$screen-sm )
+      font-size: 1.8rem
+      line-height: 1.33
+
+.font
+  &-bold
+    font-weight: 700
+  &-monospace
+    font-family: 'SpaceMono', monospace
+
+.text
+  &-accent
+    color: variable.$accent
+  &-gray
+    color: variable.$gray
+
+.buttons
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 1.6rem
+  @media screen and ( variable.$screen-sm )
+    flex-direction: row
+    grid-template-columns: repeat(2, 1fr)
+    gap: 3.2rem
+  .button
+    min-width: 100%
+    @media screen and ( variable.$screen-sm )
+      min-width: 18rem
+
+.button
+  display: inline-block
+  padding: 1rem 1.6rem
+  border-radius: .73rem
+  text-align: center
+  color: variable.$white
+  @media screen and ( variable.$screen-sm )
+    padding: 1.2rem 1.6rem
+  &--with-icon
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 1.2rem
+  &--white
+    background: variable.$white
+    color: variable.$accent
+  &--accent
+    background: variable.$accent
+    color: variable.$white
+  &--dark
+    background: variable.$medium-blue
+    color: variable.$white
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+    flex-shrink: 0
+
+.inline-button
+  display: inline-block
+  color: variable.$accent
+  font-size: 1.6rem
+  letter-spacing: -.02rem
+  @media screen and ( variable.$screen-sm )
+    font-size: 1.8rem
+  &--with-icon
+    display: inline-flex
+    align-items: center
+    gap: 1rem
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+    flex-shrink: 0
+    @media screen and ( variable.$screen-sm )
+      width: 2.4rem
+      height: 2.4rem
+
+.social-button
+  display: inline-block
+  padding: .8rem 2.4rem .8rem .8rem
+  display: flex
+  align-items: center
+  gap: 1.6rem
+  border-radius: 10rem
+  &__icon
+    width: 2rem
+    height: 2rem
+    @media screen and ( variable.$screen-sm )
+      width: 3.2rem
+      height: 3.2rem
+
+.user-button
+  display: inline-block
+  padding: .8rem 2.4rem .8rem .8rem
+  display: flex
+  align-items: center
+  gap: 1.6rem
+  border-radius: 10rem
+  &__icon
+    width: 2.4rem
+    height: 2.4rem
+    @media screen and ( variable.$screen-sm )
+      width: 4rem
+      height: 4rem
+
+.user-stack
+  display: flex
+  align-items: center
+  &__icon
+    width: 4.2rem
+    height: 4.2rem
+    border-radius: 4rem
+    border: .3rem solid variable.$medium-blue
+    background: variable.$gray
+    &:not( :first-of-type )
+      margin-left: -1.7rem
+
+.badge
+  padding: .4rem 1.6rem
+  border-radius: 4rem
+  display: inline-flex
+  &--general
+    background: variable.$dark-blue
+    color: variable.$white
+  &--primary
+    background: variable.$accent
+    color: variable.$white
+  &--success
+    background: variable.$green
+    color: variable.$white
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+
+.grid
+  display: grid
+  gap: 2.4rem
+  &--two
+    grid-template-columns: repeat(2, 1fr)
+  &--three
+    grid-template-columns: repeat(3, 1fr)
+  &--sm-two
+    @media screen and ( variable.$screen-sm )
+      grid-template-columns: repeat(2, 1fr)
+  &--sm-three
+    @media screen and ( variable.$screen-sm )
+      grid-template-columns: repeat(3, 1fr)
+
+.card
+  background: variable.$medium-blue
+  border-radius: 1.6rem
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  &--large
+    min-height: 48rem
+    @media screen and ( variable.$screen-sm )
+      min-height: 56rem
+  &--medium
+    min-height: 36.3rem
+    @media screen and ( variable.$screen-sm )
+      min-height: 44rem
+  &__image
+    width: 100%
+  &__content
+    padding: 2.4rem
+  &__number
+    width: 3.5rem
+    height: 6rem
+    @media screen and ( variable.$screen-sm )
+      height: 8rem
+  &__footer
+    margin-top: auto
+
+.content
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+    margin-top: 4rem
+  & > p, & > ul, & > ol
+    margin-top: 1.6rem
+  ul
+    margin-left: 1.5rem
+    list-style-type: disc
+  ol
+    margin-left: 3rem
+    list-style-type: decimal
+  & > *:first-child
+    margin-top: 0
+
+.banner
+  padding: 4.4rem 2rem
+  background: linear-gradient(326deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%)
+  border-radius: .8rem
+  @media screen and ( variable.$screen-sm )
+    padding: 4rem
+
+.menu
+  display: flex
+  gap: 2.8rem
+  @media screen and ( variable.$screen-sm )
+    gap: 5rem
+  &--cols
+    flex-direction: column
+  &--rows
+    flex-direction: row
+  &--sm-cols
+    @media screen and ( variable.$screen-sm )
+      flex-direction: column
+  &--sm-rows
+    @media screen and ( variable.$screen-sm )
+      flex-direction: row
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+    @media screen and ( variable.$screen-sm )
+      width: 2.4rem
+      height: 2.4rem
+
+.logo
+  &--general
+    width: 7.5rem
+    height: 4.4rem
+    @media screen and ( variable.$screen-sm )
+      width: 11.2rem
+      height: 6.5rem
+  &--small
+    width: 6rem
+    height: 6rem
+
+.hidden
+  display: none
+
+.sm-inline
+  @media screen and ( variable.$screen-sm )
+    display: inline
+
+.overflow-hidden
+  overflow: hidden
+
+.toggle-swiper
+  .swiper-slide
+    width: auto
+    padding: 0 1.2rem
