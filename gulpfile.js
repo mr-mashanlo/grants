@@ -11,7 +11,7 @@ import newer from 'gulp-newer';
 import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import gulpSass from 'gulp-sass';
-import ttf2woff2 from 'gulp-ttf2woff2';
+// import ttf2woff2 from 'gulp-ttf2woff2';
 import webp from 'gulp-webp';
 import { rollup } from 'rollup';
 import * as dartSass from 'sass';
@@ -89,7 +89,7 @@ function images() {
 function fonts() {
   return src( paths.fonts.src, { encoding: false } )
     .pipe( newer( { dest: paths.fonts.dest, ext: '.woff2' } ) )
-    .pipe( gulpIf( file => [ '.ttf' ].includes( file.extname ), ttf2woff2() ) )
+    // .pipe( gulpIf( file => [ '.ttf' ].includes( file.extname ), ttf2woff2() ) )
     .pipe( dest( paths.fonts.dest ) )
 }
 

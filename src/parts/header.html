@@ -1,10 +1,10 @@
 <header id="header" class="header">
   <div class="container container--wide">
-    <div class="header__navigation">
-      <a href="index.html" class="header__brand">
-        <img src="images/logo-general.svg" alt="" class="logo logo--general">
+    <nav aria-label="Header navigation" class="header__navigation">
+      <a href="index.html" title="Go to homepage" class="header__brand">
+        <img src="images/logo-general.svg" alt="DXDX grants" class="logo logo--general">
       </a>
-      <div class="header__slider">
+      <div id="mobile-menu" class="header__slider">
         <ul class="header__menu menu menu--cols menu--sm-rows font-monospace">
           <li class="menu__item">
             <a href="discover.html" class="menu__link text-gray">Discover initiatives</a>
@@ -24,8 +24,9 @@
         </ul>
       </div>
       <a href="" class="header__button button button--accent">Apply <span class="hidden sm-inline">for grant</span></a>
-      <button class="header__hamburger hamburger-button">
-        <div class="hamburger hamburger--chop">
+      <button aria-controls="mobile-menu" class="header__hamburger hamburger-button">
+        <span class="sr-only">Open menu</span>
+        <div aria-hidden="true" class="hamburger hamburger--chop">
           <div class="inner">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -33,6 +34,6 @@
           </div>
         </div>
       </button>
-    </div>
+    </nav>
   </div>
 </header>

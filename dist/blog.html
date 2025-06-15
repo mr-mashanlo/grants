@@ -44,11 +44,11 @@
 
     <header id="header" class="header">
   <div class="container container--wide">
-    <div class="header__navigation">
-      <a href="index.html" class="header__brand">
-        <img src="images/logo-general.svg" alt="" class="logo logo--general">
+    <nav aria-label="Header navigation" class="header__navigation">
+      <a href="index.html" title="Go to homepage" class="header__brand">
+        <img src="images/logo-general.svg" alt="DXDX grants" class="logo logo--general">
       </a>
-      <div class="header__slider">
+      <div id="mobile-menu" class="header__slider">
         <ul class="header__menu menu menu--cols menu--sm-rows font-monospace">
           <li class="menu__item">
             <a href="discover.html" class="menu__link text-gray">Discover initiatives</a>
@@ -68,8 +68,9 @@
         </ul>
       </div>
       <a href="" class="header__button button button--accent">Apply <span class="hidden sm-inline">for grant</span></a>
-      <button class="header__hamburger hamburger-button">
-        <div class="hamburger hamburger--chop">
+      <button aria-controls="mobile-menu" class="header__hamburger hamburger-button">
+        <span class="sr-only">Open menu</span>
+        <div aria-hidden="true" class="hamburger hamburger--chop">
           <div class="inner">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -77,14 +78,14 @@
           </div>
         </div>
       </button>
-    </div>
+    </nav>
   </div>
 </header>
 
-    <section id="blog" class="section blog">
+    <section id="blog" aria-labelledby="blog-heading" class="section blog">
       <div class="container container--small">
         <div class="snippet snippet--tx-center">
-          <h2 class="title title--h2">Blog</h2>
+          <h1 id="blog-heading" class="title title--h2">Blog</h1>
           <div class="snippet__actions">
             <div class="toggle-swiper">
               <div class="swiper-wrapper">
@@ -99,99 +100,99 @@
         <div class="section__content">
           <ul class="grid grid--sm-two">
             <li class="grid__item">
-              <article class="card card--medium">
-                <img src="images/news.webp" alt="" class="card__image">
-                <div class="card__content">
+              <article aria-labelledby="news-heading-1" class="card card--medium">
+                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
+                <header class="card__content">
                   <div class="snippet">
                     <p class="font-monospace text-gray">Funding round</p>
-                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                    <h2 id="news-heading-1" class="snippet__heading title title--h4">Round 9 of approvals</h2>
                   </div>
-                </div>
-                <div class="card__footer">
+                </header>
+                <footer class="card__footer">
                   <div class="card__content">
-                    <p class="font-monospace text-gray">January 1, 2022</p>
+                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                   </div>
-                </div>
+                </footer>
               </article>
             </li>
             <li class="grid__item">
-              <article class="card card--medium">
-                <img src="images/news.webp" alt="" class="card__image">
-                <div class="card__content">
+              <article aria-labelledby="news-heading-2" class="card card--medium">
+                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
+                <header class="card__content">
                   <div class="snippet">
                     <p class="font-monospace text-gray">Funding round</p>
-                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                    <h2 id="news-heading-2" class="snippet__heading title title--h4">Round 9 of approvals</h2>
                   </div>
-                </div>
-                <div class="card__footer">
+                </header>
+                <footer class="card__footer">
                   <div class="card__content">
-                    <p class="font-monospace text-gray">January 1, 2022</p>
+                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                   </div>
-                </div>
+                </footer>
               </article>
             </li>
             <li class="grid__item">
-              <article class="card card--medium">
-                <img src="images/news.webp" alt="" class="card__image">
-                <div class="card__content">
+              <article aria-labelledby="news-heading-3" class="card card--medium">
+                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
+                <header class="card__content">
                   <div class="snippet">
                     <p class="font-monospace text-gray">Funding round</p>
-                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                    <h2 id="news-heading-3" class="snippet__heading title title--h4">Round 9 of approvals</h2>
                   </div>
-                </div>
-                <div class="card__footer">
+                </header>
+                <footer class="card__footer">
                   <div class="card__content">
-                    <p class="font-monospace text-gray">January 1, 2022</p>
+                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                   </div>
-                </div>
+                </footer>
               </article>
             </li>
             <li class="grid__item">
-              <article class="card card--medium">
-                <img src="images/news.webp" alt="" class="card__image">
-                <div class="card__content">
+              <article aria-labelledby="news-heading-4" class="card card--medium">
+                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
+                <header class="card__content">
                   <div class="snippet">
                     <p class="font-monospace text-gray">Funding round</p>
-                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                    <h2 id="news-heading-4" class="snippet__heading title title--h4">Round 9 of approvals</h2>
                   </div>
-                </div>
-                <div class="card__footer">
+                </header>
+                <footer class="card__footer">
                   <div class="card__content">
-                    <p class="font-monospace text-gray">January 1, 2022</p>
+                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                   </div>
-                </div>
+                </footer>
               </article>
             </li>
             <li class="grid__item">
-              <article class="card card--medium">
-                <img src="images/news.webp" alt="" class="card__image">
-                <div class="card__content">
+              <article aria-labelledby="news-heading-5" class="card card--medium">
+                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
+                <header class="card__content">
                   <div class="snippet">
                     <p class="font-monospace text-gray">Funding round</p>
-                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                    <h2 id="news-heading-5" class="snippet__heading title title--h4">Round 9 of approvals</h2>
                   </div>
-                </div>
-                <div class="card__footer">
+                </header>
+                <footer class="card__footer">
                   <div class="card__content">
-                    <p class="font-monospace text-gray">January 1, 2022</p>
+                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                   </div>
-                </div>
+                </footer>
               </article>
             </li>
             <li class="grid__item">
-              <article class="card card--medium">
-                <img src="images/news.webp" alt="" class="card__image">
-                <div class="card__content">
+              <article aria-labelledby="news-heading-6" class="card card--medium">
+                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
+                <header class="card__content">
                   <div class="snippet">
                     <p class="font-monospace text-gray">Funding round</p>
-                    <p class="snippet__heading title title--h4">Round 9 of approvals</p>
+                    <h2 id="news-heading-6" class="snippet__heading title title--h4">Round 9 of approvals</h2>
                   </div>
-                </div>
-                <div class="card__footer">
+                </header>
+                <footer class="card__footer">
                   <div class="card__content">
-                    <p class="font-monospace text-gray">January 1, 2022</p>
+                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                   </div>
-                </div>
+                </footer>
               </article>
             </li>
           </ul>
@@ -199,16 +200,16 @@
       </div>
     </section>
 
-    <section class="section">
+    <section aria-labelledby="banner-heading" class="section">
   <div class="container">
     <div class="banner">
       <div class="snippet snippet--tx-center">
         <p class="subtitle subtitle--md">Have a project in mind?</p>
-        <h2 class="snippet__heading title title--h3">Let’s create something awesome.</h2>
+        <h2 id="banner-heading" class="snippet__heading title title--h3">Let’s create something awesome.</h2>
         <div class="snippet__actions">
           <a href="" class="button button--white button--with-icon">
             <span>Apply for grant</span>
-            <img src="images/icons/arrow-right-accent.svg" alt="" class="button__icon">
+            <img src="images/icons/arrow-right-accent.svg" alt="" aria-hidden="true" class="button__icon">
           </a>
         </div>
       </div>
@@ -218,7 +219,7 @@
 
     <footer id="footer" class="section footer">
   <div class="container">
-    <div class="footer__navigation">
+    <nav aria-label="Footer navigation" class="footer__navigation">
       <img src="images/logo-small.svg" alt="" class="logo logo--small">
       <ul class="menu menu--cols menu--sm-rows font-monospace">
         <li class="menu__item">
@@ -239,13 +240,13 @@
       </ul>
       <ul class="footer__social menu">
         <li class="menu__item">
-          <a href="" class="menu__link"><img src="images/icons/twitter.svg" alt="" class="menu__icon"></a>
+          <a href="" class="menu__link"><img src="images/icons/twitter.svg" alt="Go to twitter" class="menu__icon"></a>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link"><img src="images/icons/discord.svg" alt="" class="menu__icon"></a>
+          <a href="" class="menu__link"><img src="images/icons/discord.svg" alt="Go to discord" class="menu__icon"></a>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 </footer>
 
