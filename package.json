@@ -8,8 +8,8 @@
     "last 3 years"
   ],
   "scripts": {
-    "dev": "gulp --dev",
-    "build": "gulp --build"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
