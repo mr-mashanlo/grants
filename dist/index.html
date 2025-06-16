@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
@@ -67,7 +66,7 @@
           </li>
         </ul>
       </div>
-      <a href="" class="header__button button button--accent">Apply <span class="hidden sm-inline">for grant</span></a>
+      <a href="grants.html" class="header__button button button--accent">Apply for grant</a>
       <button aria-controls="mobile-menu" class="header__hamburger hamburger-button">
         <span class="sr-only">Open menu</span>
         <div aria-hidden="true" class="hamburger hamburger--chop">
@@ -82,157 +81,211 @@
   </div>
 </header>
 
-    <section id="intro" aria-labelledby="intro-heading" class="section intro">
-      <div class="container container--small">
-        <div class="snippet snippet--tx-center">
-          <h1 id="intro-heading" class="title title--h1">Powering the future of dYdX through community grants</h1>
-          <div class="snippet__actions">
-            <div class="intro__buttons buttons">
-              <a href="#" class="button button--dark">Discover RFPs</a>
-              <a href="#" class="button button--accent button--with-icon">
-                <span>Apply for grant</span>
-                <img src="images/icons/arrow-right-white.svg" alt="" aria-hidden="true" class="button__icon">
+    <main>
+
+      <section id="intro" aria-labelledby="intro-heading" class="section intro">
+        <div class="container container--small">
+          <div class="snippet snippet--tx-center">
+            <h1 id="intro-heading" class="title title--h1">Powering the future of dYdX through community grants</h1>
+            <div class="snippet__actions">
+              <div class="intro__buttons buttons">
+                <a href="discover.html" class="button button--dark">Discover RFPs</a>
+                <a href="grants.html" class="button button--accent button--with-icon">
+                  <span>Apply for grant</span>
+                  <img src="images/icons/arrow-right-white.svg" alt="" aria-hidden="true" class="button__icon">
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul class="intro__features font-monospace grid grid--sm-three">
+            <li class="grid__item">
+              <div class="snippet snippet--tx-center">
+                <strong class="subtitle subtitle--lg">100+</strong> <br>
+                <span class="subtitle subtitle--md text-gray">projects funded</span>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="snippet snippet--tx-center">
+                <strong class="subtitle subtitle--lg">$3+ milion</strong> <br>
+                <span class="subtitle subtitle--md text-gray">awarded</span>
+              </div>
+            </li>
+            <li class="grid__item">
+              <div class="snippet snippet--tx-center">
+                <strong class="subtitle subtitle--lg">400+</strong> <br>
+                <span class="subtitle subtitle--md text-gray">projects funded</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+  
+      <section id="project" aria-labelledby="project-heading" class="section project">
+        <div class="container">
+          <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
+            <h2 id="project-heading" class="title title--h3">Projects built with grants</h2>
+            <p class="snippet__description subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
+            <div class="snippet__content">
+              <a href="funded.html" class="inline-button inline-button--with-icon">
+                <span>View all funded projects</span>
+                <img src="images/icons/arrow-right-accent.svg" alt="" aria-hidden="true" class="inline-button__icon">
               </a>
             </div>
           </div>
-        </div>
-        <ul class="intro__features font-monospace grid grid--sm-three">
-          <li class="grid__item">
-            <div class="snippet snippet--tx-center">
-              <strong class="subtitle subtitle--lg">100+</strong> <br>
-              <span class="subtitle subtitle--md text-gray">projects funded</span>
+          <div class="section__content">
+            <div class="project-swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article aria-labelledby="project-heading-1" class="card card--large">
+                    <header class="card__content">
+                      <div class="snippet">
+                        <p class="snippet__title font-monospace text-gray">Crowdfund</p>
+                        <h3 id="project-heading-1" class="snippet__heading title title--h4">Funding rates page 1</h3>
+                        <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                        <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      </div>
+                    </header>
+                    <footer class="card__footer">
+                      <div class="card__content">
+                        <ul aria-label="Contributors" class="user-stack">
+                          <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
+                        </ul>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article aria-labelledby="project-heading-2" class="card card--large">
+                    <header class="card__content">
+                      <div class="snippet">
+                        <p class="snippet__title font-monospace text-gray">Crowdfund</p>
+                        <h3 id="project-heading-2" class="snippet__heading title title--h4">Funding rates page 2</h3>
+                        <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                        <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      </div>
+                    </header>
+                    <footer class="card__footer">
+                      <div class="card__content">
+                        <ul aria-label="Contributors" class="user-stack">
+                          <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Jane Doe" class="user-stack__icon"></li>
+                        </ul>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article aria-labelledby="project-heading-3" class="card card--large">
+                    <header class="card__content">
+                      <div class="snippet">
+                        <p class="snippet__title font-monospace text-gray">Crowdfund</p>
+                        <h3 id="project-heading-3" class="snippet__heading title title--h4">Funding rates page 3</h3>
+                        <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                        <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      </div>
+                    </header>
+                    <footer class="card__footer">
+                      <div class="card__content">
+                        <ul aria-label="Contributors" class="user-stack">
+                          <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
+                        </ul>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article aria-labelledby="project-heading-4" class="card card--large">
+                    <header class="card__content">
+                      <div class="snippet">
+                        <p class="snippet__title font-monospace text-gray">Crowdfund</p>
+                        <h3 id="project-heading-4" class="snippet__heading title title--h4">Funding rates page 4</h3>
+                        <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                        <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      </div>
+                    </header>
+                    <footer class="card__footer">
+                      <div class="card__content">
+                        <ul aria-label="Contributors" class="user-stack">
+                          <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Jane Doe" class="user-stack__icon"></li>
+                        </ul>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article aria-labelledby="project-heading-5" class="card card--large">
+                    <header class="card__content">
+                      <div class="snippet">
+                        <p class="snippet__title font-monospace text-gray">Crowdfund</p>
+                        <h3 id="project-heading-5" class="snippet__heading title title--h4">Funding rates page 5</h3>
+                        <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                        <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      </div>
+                    </header>
+                    <footer class="card__footer">
+                      <div class="card__content">
+                        <ul aria-label="Contributors" class="user-stack">
+                          <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
+                          <li class="user-stack__item"><img src="images/user.svg" alt="Jane Doe" class="user-stack__icon"></li>
+                        </ul>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li class="grid__item">
-            <div class="snippet snippet--tx-center">
-              <strong class="subtitle subtitle--lg">$3+ milion</strong> <br>
-              <span class="subtitle subtitle--md text-gray">awarded</span>
-            </div>
-          </li>
-          <li class="grid__item">
-            <div class="snippet snippet--tx-center">
-              <strong class="subtitle subtitle--lg">400+</strong> <br>
-              <span class="subtitle subtitle--md text-gray">projects funded</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="project" aria-labelledby="project-heading" class="section project">
-      <div class="container">
-        <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
-          <h2 id="project-heading" class="title title--h3">Projects built with grants</h2>
-          <p class="snippet__description subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
-          <div class="snippet__content">
-            <a href="#" class="inline-button inline-button--with-icon">
-              <span>View all funded projects</span>
-              <img src="images/icons/arrow-right-accent.svg" alt="" class="inline-button__icon">
-            </a>
           </div>
         </div>
-        <div class="section__content">
-          <div class="project-swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <article aria-labelledby="project-heading-1" class="card card--large">
+      </section>
+  
+      <section id="news" aria-labelledby="news-heading" class="section news">
+        <div class="container container--small">
+          <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
+            <h2 id="news-heading" class="title title--h3">What’s new?</h2>
+            <p class="snippet__description subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
+            <div class="snippet__content">
+              <a href="blog.html" class="inline-button inline-button--with-icon">
+                <span>Read more on our blog</span>
+                <img src="images/icons/arrow-right-accent.svg" alt="" aria-hidden="true" class="inline-button__icon">
+              </a>
+            </div>
+          </div>
+          <div class="section__content">
+            <ul class="grid grid--sm-two">
+              <li class="grid__item">
+                <article aria-labelledby="news-heading-1" class="card card--medium">
+                  <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
                   <header class="card__content">
                     <div class="snippet">
-                      <p class="snippet__title font-monospace text-gray">Crowdfund</p>
-                      <h3 id="project-heading-1" class="snippet__heading title title--h4">Funding rates page</h3>
-                      <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
-                      <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      <p class="font-monospace text-gray">Funding round</p>
+                      <h3 id="news-heading-1" class="snippet__heading title title--h4">Round 9 of approvals 1</h3>
                     </div>
                   </header>
                   <footer class="card__footer">
                     <div class="card__content">
-                      <ul aria-label="Contributors" class="user-stack">
-                        <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
-                      </ul>
+                      <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                     </div>
                   </footer>
                 </article>
               </li>
-              <li class="swiper-slide">
-                <article aria-labelledby="project-heading-2" class="card card--large">
+              <li class="grid__item">
+                <article aria-labelledby="news-heading-2" class="card card--medium">
+                  <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
                   <header class="card__content">
                     <div class="snippet">
-                      <p class="snippet__title font-monospace text-gray">Crowdfund</p>
-                      <h3 id="project-heading-2" class="snippet__heading title title--h4">Funding rates page</h3>
-                      <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
-                      <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+                      <p class="font-monospace text-gray">Funding round</p>
+                      <h3 id="news-heading-2" class="snippet__heading title title--h4">Round 9 of approvals 2</h3>
                     </div>
                   </header>
                   <footer class="card__footer">
                     <div class="card__content">
-                      <ul aria-label="Contributors" class="user-stack">
-                        <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Jane Doe" class="user-stack__icon"></li>
-                      </ul>
-                    </div>
-                  </footer>
-                </article>
-              </li>
-              <li class="swiper-slide">
-                <article aria-labelledby="project-heading-3" class="card card--large">
-                  <header class="card__content">
-                    <div class="snippet">
-                      <p class="snippet__title font-monospace text-gray">Crowdfund</p>
-                      <h3 id="project-heading-3" class="snippet__heading title title--h4">Funding rates page</h3>
-                      <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
-                      <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-                    </div>
-                  </header>
-                  <footer class="card__footer">
-                    <div class="card__content">
-                      <ul aria-label="Contributors" class="user-stack">
-                        <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
-                      </ul>
-                    </div>
-                  </footer>
-                </article>
-              </li>
-              <li class="swiper-slide">
-                <article aria-labelledby="project-heading-4" class="card card--large">
-                  <header class="card__content">
-                    <div class="snippet">
-                      <p class="snippet__title font-monospace text-gray">Crowdfund</p>
-                      <h3 id="project-heading-4" class="snippet__heading title title--h4">Funding rates page</h3>
-                      <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
-                      <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-                    </div>
-                  </header>
-                  <footer class="card__footer">
-                    <div class="card__content">
-                      <ul aria-label="Contributors" class="user-stack">
-                        <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Jane Doe" class="user-stack__icon"></li>
-                      </ul>
-                    </div>
-                  </footer>
-                </article>
-              </li>
-              <li class="swiper-slide">
-                <article aria-labelledby="project-heading-5" class="card card--large">
-                  <header class="card__content">
-                    <div class="snippet">
-                      <p class="snippet__title font-monospace text-gray">Crowdfund</p>
-                      <h3 id="project-heading-5" class="snippet__heading title title--h4">Funding rates page</h3>
-                      <p class="snippet__heading font-monospace text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
-                      <p class="snippet__description">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
-                    </div>
-                  </header>
-                  <footer class="card__footer">
-                    <div class="card__content">
-                      <ul aria-label="Contributors" class="user-stack">
-                        <li class="user-stack__item"><img src="images/user.svg" alt="John Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Steve Doe" class="user-stack__icon"></li>
-                        <li class="user-stack__item"><img src="images/user.svg" alt="Jane Doe" class="user-stack__icon"></li>
-                      </ul>
+                      <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
                     </div>
                   </footer>
                 </article>
@@ -240,215 +293,165 @@
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="news" aria-labelledby="news-heading" class="section news">
-      <div class="container container--small">
-        <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
-          <h2 id="news-heading" class="title title--h3">What’s new?</h2>
-          <p class="snippet__description subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
-          <div class="snippet__content">
-            <a href="#" class="inline-button inline-button--with-icon">
-              <span>Read more on our blog</span>
-              <img src="images/icons/arrow-right-accent.svg" alt="" class="inline-button__icon">
-            </a>
+      </section>
+  
+      <section id="question" aria-labelledby="question-heading" class="section question">
+        <div class="container container--small">
+          <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
+            <h2 id="question-heading" class="title title--h3">Frequently asked questions</h2>
+            <p class="snippet__content subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
+          </div>
+          <div class="section__content">
+            <ul class="question-accordion accordion">
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">How do I apply?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <ol>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>
+                        <ol>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">Can I apply as a U.S. based person/company?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">How will I be compensated?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">What type of project will qualify for a Grant?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">What is the application timeline? When can I expect to hear back?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">How can I increase my chances of getting funded?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">
+                  <p class="subtitle subtitle--md">How can I increase my chances of getting funded?</p>
+                  <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="section__content">
-          <ul class="grid grid--sm-two">
-            <li class="grid__item">
-              <article aria-labelledby="news-heading-1" class="card card--medium">
-                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
-                <header class="card__content">
-                  <div class="snippet">
-                    <p class="font-monospace text-gray">Funding round</p>
-                    <h3 id="news-heading-1" class="snippet__heading title title--h4">Round 9 of approvals</h3>
-                  </div>
-                </header>
-                <footer class="card__footer">
+      </section>
+  
+      <section id="application" aria-labelledby="application-heading" class="section application">
+        <div class="container">
+          <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
+            <h2 id="application-heading" class="title title--h3">Application process</h2>
+            <p class="snippet__content subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
+          </div>
+          <div class="section__content">
+            <ul class="application__grid grid grid--sm-three">
+              <li class="grid__item">
+                <article aria-labelledby="application-heading-1" class="application__card card">
                   <div class="card__content">
-                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
+                    <div class="snippet">
+                      <img src="images/1.svg" alt="1" aria-hidden="true" class="card__number">
+                      <div class="snippet__actions">
+                        <h3 id="application-heading-1" class="title title--h4">Apply</h3>
+                        <p class="snippet__description">Submit a complete application to the dYdX Grants Team including as many details as possible about the proposed idea and their background.</p>
+                      </div>
+                    </div>
                   </div>
-                </footer>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article aria-labelledby="news-heading-2" class="card card--medium">
-                <img src="images/news.webp" alt="Round 9 of approvals" class="card__image">
-                <header class="card__content">
-                  <div class="snippet">
-                    <p class="font-monospace text-gray">Funding round</p>
-                    <h3 aria-labelledby="news-heading-2" class="snippet__heading title title--h4">Round 9 of approvals</h3>
-                  </div>
-                </header>
-                <footer class="card__footer">
+                </article>
+              </li>
+              <li class="grid__item">
+                <article aria-labelledby="application-heading-2" class="application__card card">
                   <div class="card__content">
-                    <p class="font-monospace text-gray"><datetime time="2022-01-01">January 1, 2022</datetime></p>
+                    <div class="snippet">
+                      <img src="images/2.svg" alt="2" aria-hidden="true" class="card__number">
+                      <div class="snippet__actions">
+                        <h3 id="application-heading-2" class="title title--h4">Interview</h3>
+                        <p class="snippet__description">If your application is selected, the dYdX Grants will conduct 1-2 interviews to collect more information on the Applicant's background and the proposal.</p>
+                      </div>
+                    </div>
                   </div>
-                </footer>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="question" aria-labelledby="question-heading" class="section question">
-      <div class="container container--small">
-        <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
-          <h2 id="question-heading" class="title title--h3">Frequently asked questions</h2>
-          <p class="snippet__content subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
-        </div>
-        <div class="section__content">
-          <div class="question-accordion accordion">
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">How do I apply?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <h3>Lorem ipsum dolor sit</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                  <h3>Lorem ipsum dolor sit</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                  <h3>Lorem ipsum dolor sit</h3>
-                  <ol>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>
-                      <ol>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                      </ol>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">Can I apply as a U.S. based person/company?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">How will I be compensated?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">What type of project will qualify for a Grant?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">What is the application timeline? When can I expect to hear back?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">How can I increase my chances of getting funded?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="accordion__header">
-                <p class="subtitle subtitle--md">How can I increase my chances of getting funded?</p>
-                <img src="images/icons/plus.svg" alt="" aria-hidden="true" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta modi libero consectetur aperiam, sunt, maxime placeat accusamus delectus qui reprehenderit. Harum accusantium quod, vero veniam quaerat amet voluptatibus est quis sed neque culpa labore eaque rem illo earum expedita maxime aliquam, dolor dolorum deleniti reprehenderit vel facere totam? Non?</p>
-                </div>
-              </div>
-            </article>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article aria-labelledby="application-heading-3" class="application__card card">
+                  <div class="card__content">
+                    <div class="snippet">
+                      <img src="images/3.svg" alt="3" aria-hidden="true" class="card__number">
+                      <div class="snippet__actions">
+                        <h3 id="application-heading-3" class="title title--h4">Grant offer</h3>
+                        <p class="snippet__description">The dYdX Grants team will determine if the proposal fits into the grant program. A vesting schedule and timeline for product development reports will also be determined in the offer.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="application" aria-labelledby="application-heading" class="section application">
-      <div class="container">
-        <div class="snippet snippet--wide snippet--bg-image snippet--tx-center">
-          <h2 id="application-heading" class="title title--h3">Application process</h2>
-          <p class="snippet__content subtitle subtitle--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla risus, consectetur ut bibendum non, gravida non libero.</p>
-        </div>
-        <div class="section__content">
-          <ul class="application__grid grid grid--sm-three">
-            <li class="grid__item">
-              <article aria-labelledby="application-heading-1" class="application__card card">
-                <div class="card__content">
-                  <div class="snippet">
-                    <img src="images/1.svg" alt="1" aria-hidden="true" class="card__number">
-                    <div class="snippet__actions">
-                      <h3 id="application-heading-1" class="title title--h4">Apply</h3>
-                      <p class="snippet__description">Submit a complete application to the dYdX Grants Team including as many details as possible about the proposed idea and their background.</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article aria-labelledby="application-heading-2" class="application__card card">
-                <div class="card__content">
-                  <div class="snippet">
-                    <img src="images/2.svg" alt="2" aria-hidden="true" class="card__number">
-                    <div class="snippet__actions">
-                      <h3 id="application-heading-2" class="title title--h4">Interview</h3>
-                      <p class="snippet__description">If your application is selected, the dYdX Grants will conduct 1-2 interviews to collect more information on the Applicant's background and the proposal.</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article aria-labelledby="application-heading-3" class="application__card card">
-                <div class="card__content">
-                  <div class="snippet">
-                    <img src="images/3.svg" alt="3" aria-hidden="true" class="card__number">
-                    <div class="snippet__actions">
-                      <h3 id="application-heading-3" class="title title--h4">Grant offer</h3>
-                      <p class="snippet__description">The dYdX Grants team will determine if the proposal fits into the grant program. A vesting schedule and timeline for product development reports will also be determined in the offer.</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    </main>
 
     <section aria-labelledby="banner-heading" class="section">
   <div class="container">
@@ -470,30 +473,32 @@
     <footer id="footer" class="section footer">
   <div class="container">
     <nav aria-label="Footer navigation" class="footer__navigation">
-      <img src="images/logo-small.svg" alt="" class="logo logo--small">
+      <a href="index.html" title="Go to homepage">
+        <img src="images/logo-small.svg" alt="DXDX grants" class="logo logo--small">
+      </a>
       <ul class="menu menu--cols menu--sm-rows font-monospace">
         <li class="menu__item">
-          <a href="" class="menu__link text-gray">About</a>
+          <a href="about.html" class="menu__link text-gray">About</a>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link text-gray">FAQ</a>
+          <a href="faq.html" class="menu__link text-gray">FAQ</a>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link text-gray">Brand assets</a>
+          <a href="brand.html" class="menu__link text-gray">Brand assets</a>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link text-gray">dYdX Foundation</a>
+          <a href="foundation.html" class="menu__link text-gray">dYdX Foundation</a>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link text-gray">dYdX trading</a>
+          <a href="trading.html" class="menu__link text-gray">dYdX trading</a>
         </li>
       </ul>
       <ul class="footer__social menu">
         <li class="menu__item">
-          <a href="" class="menu__link"><img src="images/icons/twitter.svg" alt="Go to twitter" class="menu__icon"></a>
+          <a href="twitter.html" class="menu__link"><img src="images/icons/twitter.svg" alt="Go to twitter" class="menu__icon"></a>
         </li>
         <li class="menu__item">
-          <a href="" class="menu__link"><img src="images/icons/discord.svg" alt="Go to discord" class="menu__icon"></a>
+          <a href="discord.html" class="menu__link"><img src="images/icons/discord.svg" alt="Go to discord" class="menu__icon"></a>
         </li>
       </ul>
     </nav>
