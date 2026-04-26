@@ -4,14 +4,14 @@ A clean and fully semantic HTML5 layout optimized for accessibility (a11y), fast
 
 ## Scores
 
-![Lighthouse Graph](./dist/images/lighthouse.webp)
-![Accessibility Graph](./dist/images/accessibility.webp)
+![Lighthouse Graph](./public/images/lighthouse.png)
+![Accessibility Graph](./public/images/accessibility.png)
 
 ## Pages
 
 - [Home Page](https://mr-mashanlo.github.io/grants/dist/index.html)
-- [Blog Page](https://mr-mashanlo.github.io/grants/dist/blog.html)
 - [Grants Page](https://mr-mashanlo.github.io/grants/dist/grants.html)
-- [Discover Page](https://mr-mashanlo.github.io/grants/dist/discover.html)
-- [Program Page](https://mr-mashanlo.github.io/grants/dist/program.html)
+- [Programs Page](https://mr-mashanlo.github.io/grants/dist/programs.html)
+- [Blog Page](https://mr-mashanlo.github.io/grants/dist/blog.html)
 - [FAQ Page](https://mr-mashanlo.github.io/grants/dist/faq.html)
+- [Sign in Page](https://mr-mashanlo.github.io/grants/dist/signin.html)

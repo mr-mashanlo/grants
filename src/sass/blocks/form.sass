@@ -1,0 +1,41 @@
+@use '../variables' as variables
+
+.form
+  max-width: 70rem
+  margin: 0 auto
+  display: grid
+  gap: 2.4rem
+  @media ( variables.$screen-sm )
+    grid-template-columns: repeat(2, 1fr)
+  &-field
+    display: grid
+    gap: .2rem
+    position: relative
+    &__input
+      min-width: 100%
+      display: inline-flex
+      align-items: center
+      gap: 1.2rem
+      padding: 1rem 1.6rem
+      border-radius: .73rem
+      border: none
+      background: variables.$medium-blue
+      color: variables.$white
+    &__error
+      font-size: 1rem
+      position: absolute
+      top: calc(100% + .5rem)
+      right: 0
+      @media ( variables.$screen-sm )
+        font-size: 1.2rem
+  &-action
+    margin-top: 2.6rem
+    &__button
+      min-width: 100%
+      padding: 1rem 1.6rem
+      text-align: center
+      border-radius: .73rem
+      border: none
+      background: variables.$accent
+      color: variables.$white
+      cursor: pointer

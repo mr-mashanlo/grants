@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Page</title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/images/favicon.svg" sizes="32x32">
+    <link rel="apple-touch-icon" href="/images/favicon.svg">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container container--wide">
+        <nav aria-label="Header navigation" class="header__navigation">
+          <a href="/" title="Go to homepage" class="header__brand">
+            <img src="/images/logo-general.svg" alt="DXDX grants" class="logo logo--general">
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="question" aria-labelledby="question-heading" class="section question">
+        <div class="container container--small">
+          <div class="section-header section-header--wide">
+            <h2 id="project-heading" class="section-header__title text-h3 text-bold">Sign up</h2>
+          </div>
+          <div class="section-content">
+            <form id="signup-form" class="form">
+              <div class="form-field">
+                <label for="first-name" class="form-field__label">First name</label>
+                <input id="first-name" type="text" placeholder="John" class="form-field__input">
+              </div>
+              <div class="form-field">
+                <label for="last-name" class="form-field__label">Last name</label>
+                <input id="last-name" type="text" placeholder="Doe" class="form-field__input">
+              </div>
+              <div class="form-field">
+                <label for="email" class="form-field__label">Email</label>
+                <input id="email" type="email" placeholder="name@company.com" class="form-field__input">
+              </div>
+              <div class="form-field">
+                <label for="password" class="form-field__label">Password</label>
+                <input id="password" type="password" placeholder="Pass&12345" class="form-field__input">
+              </div>
+              <div class="form-field">
+                <label for="confirm-password" class="form-field__label">Confirm password</label>
+                <input id="confirm-password" type="password" placeholder="Pass&12345" class="form-field__input">
+              </div>
+              <div class="form-action">
+                <button class="form-action__button">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

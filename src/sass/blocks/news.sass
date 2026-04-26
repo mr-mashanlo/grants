@@ -1,0 +1,13 @@
+@use '../variables' as variables
+
+.news
+  &-grid
+    display: grid
+    gap: 2.4rem
+    @media ( variables.$screen-sm )
+      grid-template-columns: repeat(2, 1fr)
+  &-card
+    min-height: 40rem
+    padding: 0
+    &__content
+      padding: 2.4rem

@@ -1,0 +1,14 @@
+@use '../variables' as variables
+
+.footer
+  &__navigation
+    display: flex
+    gap: 3rem
+    flex-direction: column
+    @media ( variables.$screen-sm )
+      flex-direction: row
+      align-items: center
+      gap: 5rem
+  &__social
+    @media ( variables.$screen-sm )
+      margin-left: auto

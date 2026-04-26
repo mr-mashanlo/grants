@@ -1,0 +1,27 @@
+@use '../variables' as variables
+
+.intro
+  padding: 4.3rem 0 7.2rem 0
+  @media ( variables.$screen-sm )
+    padding: 8.5rem 0 12.7rem 0
+  &__title
+    text-align: center
+  &__buttons
+    margin-top: 3.6rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1.6rem
+    @media ( variables.$screen-sm )
+      flex-direction: row
+      grid-template-columns: repeat(2, 1fr)
+      gap: 3.2rem
+  &-features
+    margin-top: 3.8rem
+    display: grid
+    gap: 2.4rem
+    text-align: center
+    @media ( variables.$screen-sm )
+      margin-top: 8rem
+      grid-template-columns: repeat(3, 1fr)

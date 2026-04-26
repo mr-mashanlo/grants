@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programs Page</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container container--wide">
+        <nav aria-label="Header navigation" class="header__navigation">
+          <a href="/" title="Go to homepage" class="header__brand">
+            <img src="/images/logo-general.svg" alt="DXDX grants" class="logo logo--general">
+          </a>
+          <div id="mobile-menu" class="header__slider">
+            <ul class="header__menu menu">
+              <li class="menu__item">
+                <a href="/grants" class="text-mono text-gray">Funded grants</a>
+              </li>
+              <li class="menu__item">
+                <a href="/programs" class="text-mono text-gray">Program expenses</a>
+              </li>
+              <li class="menu__item">
+                <a href="/blog" class="text-mono text-gray">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="/faq" class="text-mono text-gray">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <a href="/signup" class="header__button button button--accent">Apply for grant</a>
+          <button aria-controls="mobile-menu" class="header__hamburger hamburger-button">
+            <span class="sr-only">Open menu</span>
+            <span aria-hidden="true" class="hamburger hamburger--chop">
+              <span class="inner">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </span>
+            </span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="project" aria-labelledby="project-heading" class="section project">
+        <div class="container container--small">
+          <div class="section-header">
+            <h2 id="project-heading" class="section-header__title text-h2 text-bold">Program expenses</h2>
+          </div>
+          <div class="project-actions toggle-swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><button class="button button--dark">All</button></li>
+              <li class="swiper-slide"><button class="button">Open</button></li>
+              <li class="swiper-slide"><button class="button">Funded</button></li>
+              <li class="swiper-slide"><button class="button">Completed</button></li>
+            </ul>
+          </div>
+          <div class="section-content">
+            <ul class="project-list">
+              <li class="project-list__item">
+                <article aria-labelledby="project-heading-1" class="project-list__card card">
+                  <div class="content">
+                    <h3 id="project-heading-1" class="text-h4 text-bold">Funding rates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum neque deserunt harum.</p>
+                    <p class="text-mono text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                  </div>
+                </article>
+              </li>
+              <li class="project-list__item">
+                <article aria-labelledby="project-heading-2" class="project-list__card card">
+                  <div class="content">
+                    <h3 id="project-heading-2" class="text-h4 text-bold">Funding rates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum neque deserunt harum.</p>
+                    <p class="text-mono text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                  </div>
+                </article>
+              </li>
+              <li class="project-list__item">
+                <article aria-labelledby="project-heading-3" class="project-list__card card">
+                  <div class="content">
+                    <h3 id="project-heading-3" class="text-h4 text-bold">Funding rates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum neque deserunt harum.</p>
+                    <p class="text-mono text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                  </div>
+                </article>
+              </li>
+              <li class="project-list__item">
+                <article aria-labelledby="project-heading-4" class="project-list__card card">
+                  <div class="content">
+                    <h3 id="project-heading-4" class="text-h4 text-bold">Funding rates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum neque deserunt harum.</p>
+                    <p class="text-mono text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                  </div>
+                </article>
+              </li>
+              <li class="project-list__item">
+                <article aria-labelledby="project-heading-5" class="project-list__card card">
+                  <div class="content">
+                    <h3 id="project-heading-5" class="text-h4 text-bold">Funding rates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum neque deserunt harum.</p>
+                    <p class="text-mono text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                  </div>
+                </article>
+              </li>
+              <li class="project-list__item">
+                <article aria-labelledby="project-heading-6" class="project-list__card card">
+                  <div class="content">
+                    <h3 id="project-heading-6" class="text-h4 text-bold">Funding rates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum neque deserunt harum.</p>
+                    <p class="text-mono text-gray"><strong>Funding amount:</strong> $5,000 - $6,000</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="banner" aria-labelledby="banner-heading" class="section">
+        <div class="container">
+          <div class="banner">
+            <div class="section-header">
+              <p class="section-header__title text-h6">Have a project in mind?</p>
+              <h2 id="banner-heading" class="section-header__description text-h3 text-bold">Let’s create something awesome.</h2>
+              <a href="" class="section-header__button button button--white">
+                <span>Apply for grant</span>
+                <img src="/images/arrow-right-accent.svg" alt="" aria-hidden="true" class="button__icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="section footer">
+      <div class="container">
+        <nav aria-label="Footer navigation" class="footer__navigation">
+          <a href="/" title="Go to homepage">
+            <img src="/images/logo-small.svg" alt="DXDX grants" class="logo logo--small">
+          </a>
+          <ul class="menu menu--cols menu--sm-rows text-mono">
+            <li class="menu__item">
+              <a href="/" class="menu__link text-gray">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link text-gray">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link text-gray">Brand assets</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link text-gray">dYdX Foundation</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link text-gray">dYdX trading</a>
+            </li>
+          </ul>
+          <ul class="footer__social menu">
+            <li class="menu__item">
+              <a href="/" class="menu__link"><img src="/images/twitter.svg" alt="Go to twitter" class="menu__icon"></a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link"><img src="/images/discord.svg" alt="Go to discord" class="menu__icon"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

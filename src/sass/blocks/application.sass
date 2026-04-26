@@ -1,0 +1,23 @@
+@use '../variables' as variables
+
+.application
+  &-features
+    display: grid
+    gap: 2.4rem
+    @media ( variables.$screen-sm )
+      grid-template-columns: repeat(3, 1fr)
+    &__item
+      &:nth-child(1)
+        transform: rotate(-1deg)
+        @media ( variables.$screen-sm )
+          transform: translateY(-1.5rem) rotate(-1deg)
+      &:nth-of-type(2)
+        transform: rotate(3deg)
+        @media screen and ( variables.$screen-sm )
+          transform: translateY(1.4rem) translateX(1.7rem) rotate(3deg)
+      &:nth-of-type(3)
+        transform: rotate(-2deg)
+        @media screen and ( variables.$screen-sm )
+          transform: translateY(-0.7rem) translateX(3.4rem) rotate(-2deg)
+  &-card
+    min-height: 45rem

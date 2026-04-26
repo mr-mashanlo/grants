@@ -1,0 +1,48 @@
+@use '../variables' as variables
+
+.button
+  min-width: 100%
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: 1.2rem
+  padding: 1rem 1.6rem
+  border-radius: .73rem
+  border: none
+  background: none
+  text-align: center
+  color: variables.$white
+  cursor: pointer
+  @media ( variables.$screen-sm )
+    min-width: 18rem
+    padding: 1.2rem 1.6rem
+  &--white
+    background: variables.$white
+    color: variables.$accent
+  &--accent
+    background: variables.$accent
+    color: variables.$white
+  &--dark
+    background: variables.$medium-blue
+    color: variables.$white
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+    flex-shrink: 0
+
+.inline-button
+  display: inline-flex
+  align-items: center
+  gap: 1rem
+  color: variables.$accent
+  font-size: 1.6rem
+  letter-spacing: -.02rem
+  @media ( variables.$screen-sm )
+    font-size: 1.8rem
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+    flex-shrink: 0
+    @media screen and ( variables.$screen-sm )
+      width: 2.4rem
+      height: 2.4rem

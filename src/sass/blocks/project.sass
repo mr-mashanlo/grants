@@ -1,0 +1,33 @@
+@use '../variables' as variables
+
+.project
+  overflow: hidden
+  &-grid
+    display: grid
+    gap: 2.4rem
+    @media ( variables.$screen-sm )
+      grid-template-columns: repeat(3, 1fr)
+    &__card
+      min-height: 50rem
+    &__users
+      margin-top: auto
+  &-list
+    display: grid
+    gap: 2.4rem
+  &-actions .swiper-slide
+    width: auto
+    margin-top: 3.6rem
+    padding: 0 1.2rem
+
+.user-stack
+  display: flex
+  align-items: center
+  &__item
+    &:not( :first-of-type )
+      margin-left: -1.7rem
+  &__icon
+    width: 4.2rem
+    height: 4.2rem
+    border-radius: 4rem
+    border: .3rem solid variables.$medium-blue
+    background: variables.$gray

@@ -1,0 +1,51 @@
+@use '../variables' as variables
+
+.text
+  &-h1
+    font-size: 4rem
+    line-height: 1.2
+    letter-spacing: -0.09rem
+    @media ( variables.$screen-sm )
+      font-size: 8rem
+      line-height: 1.1
+      letter-spacing: -.18rem
+  &-h2
+    font-size: 3.2rem
+    line-height: 1.25
+    @media ( variables.$screen-sm )
+      font-size: 6rem
+      line-height: 1.2
+      letter-spacing: -.15rem
+  &-h3
+    font-size: 2.4rem
+    line-height: 1.33
+    letter-spacing: -.04rem
+    @media ( variables.$screen-sm )
+      font-size: 4rem
+      line-height: 1.2
+      letter-spacing: -.08rem
+  &-h4
+    font-size: 2rem
+    line-height: 1.6
+    letter-spacing: -.04rem
+    @media ( variables.$screen-sm )
+      font-size: 2.4rem
+      line-height: 1.33
+  &-h5
+    font-size: 2rem
+    line-height: 1.6
+  &-h6
+    font-size: 1.6rem
+    line-height: 1.5
+    letter-spacing: -.02rem
+    @media ( variables.$screen-sm )
+      font-size: 1.8rem
+      line-height: 1.33
+  &-bold
+    font-weight: 700
+  &-mono
+    font-family: 'SpaceMono', monospace
+  &-accent
+    color: variables.$accent
+  &-gray
+    color: variables.$gray
